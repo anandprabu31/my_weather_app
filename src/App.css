@@ -1,0 +1,71 @@
+/* App.css */
+
+.container {
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease;
+}
+
+.cityName {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+/* .weather-info {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(245, 184, 184, 100);
+  color: #fff;
+} */
+
+/* Background colors based on weather conditions */
+.bg-clouds {
+  background: linear-gradient(135deg, #c2c3c4, #6e7a82);
+}
+
+.bg-rain {
+  background: linear-gradient(135deg, #0bfafb, #22223b);
+}
+
+.bg-clear {
+  background: linear-gradient(135deg, #67b26f, #4ca2cd);
+}
+
+.bg-mist {
+  background: linear-gradient(135deg, #9a8c98, #22223b);
+}
+
+.bg-default {
+  background: linear-gradient(135deg, #0bfafb, #eef2f3);
+}
+
+/* Button Styles */
+.btn-search {
+  background-color: #007bff;
+  /* color: white; */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-search:hover {
+  background-color: #0056b3;
+}
+
+/* Temperature and climate text */
+.temprature {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.climate {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+}
