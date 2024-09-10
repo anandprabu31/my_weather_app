@@ -16,7 +16,12 @@ const Myapp = () => {
 
     const handleInput = (event) => {
         setSearch(event.target.value);
-    }
+    } 
+     const handleEnter = (event) => {
+        if (event.key === 'Enter') {
+          myFun();
+        }
+      };
 
     const myFun = async () => {
         try {
@@ -62,6 +67,7 @@ const Myapp = () => {
                         placeholder='Enter City, Country'
                         value={search}
                         onChange={handleInput}
+                        onKeyDown={handleEnter}
                         style={{ backgroundColor: "#f0f0f0", borderRadius: '8px' }}
                     />
                     <button className='btn btn-search' onClick={myFun}>
